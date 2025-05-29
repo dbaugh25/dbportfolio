@@ -1,15 +1,4 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
 
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
-*/
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px
@@ -97,9 +86,9 @@ header a {
 }
 
 header a:hover {
-    color: #217dbb;
+    color: #8a0e0e;
     text-decoration: none;
-    background: #eee;
+    background: #fbeee6;
     border-radius: 4px
 }
 
@@ -215,7 +204,7 @@ footer {
 
 .btn-rounded-white {
     display: inline-block;
-    color: #fff;
+    color: #f5f5f5;
     padding: 15px 25px;
     border: 3px solid #fff;
     border-radius: 30px;
@@ -280,10 +269,6 @@ footer {
     text-align: center
 }
 
-#lead-content h1,
-#lead-content h2 {
-    margin: 0
-}
 
 #lead-content h1 {
     color: #fff;
@@ -295,10 +280,15 @@ footer {
 }
 
 #lead-content h2 {
-    color: #a0cfee;
+    color: #f5f5f5;
     font-weight: 500;
     font-size: 2.25em;
-    margin-bottom: 15px
+}
+
+#lead-content h3 {
+    color: #f5f5f5;
+    font-weight: 500;
+    font-size: 1.5em;
 }
 
 #lead-overlay {
@@ -309,7 +299,8 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(33, 125, 187, 0.8);
+    background: rgba(179, 27, 27, 0.85);
+    ;
     z-index: 1
 }
 
@@ -321,7 +312,6 @@ footer {
     text-align: center;
     z-index: 10;
     bottom: 15px;
-    color: #fff
 }
 
 #lead-down span {
@@ -331,15 +321,18 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #a0cfee;
-    text-align: center
+    border: 3px solid #fff;
+    text-align: center;
+  }
+  
+
+#lead-down i{
+    font-size: 18px;
+    color: #fff;
+    line-height: 35px;
+    animation: pulsate 1.5s ease infinite;
 }
 
-#lead-down i {
-    animation: pulsate 1.5s ease;
-    animation-iteration-count: infinite;
-    padding-top: 5px
-}
 
 @keyframes pulsate {
     0% {
@@ -632,7 +625,7 @@ footer {
     border-radius: 4px;
     border: none;
     margin-bottom: 10px;
-    background: #1d6fa5;
+    background: #7d1414;
     color: #fff;
     transition: .5s ease all
 }
@@ -873,18 +866,102 @@ footer {
 }
 
 body.dark {
-    background-color: #1e1e1e;
-    color: #eaeaea;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-body.dark a,
-body.dark .heading:after {
-    color: #ffa500;
-    background: #ffa500;
+body.dark #lead-content h1,
+body.dark #lead-content h2,
+body.dark #lead-content h3 {
+    color: #000;
 }
 
-body.dark header ul {
-    background: #2a2a2a;
+body.dark #about p,
+body.dark #about h2 {
+    color: #fff;
+}
+
+
+body.dark #contact h2,
+body.dark #contact-form,
+body.dark #contact-form input,
+body.dark #contact-form textarea,
+body.dark #contact-form button {
+    color: #fff;
+}
+
+
+body.dark #contact-form button {
+    background: #222;
+    color: #fff;
+}
+
+
+body.dark header ul,
+body.dark footer,
+body.dark .education-block,
+body.dark .project,
+body.dark .vtimeline-content,
+body.dark .optional-section-block {
+    background-color: #2b2b2b;
+}
+
+body.dark #experience h2,
+body.dark .vtimeline-content h3,
+body.dark .vtimeline-content h4,
+body.dark .vtimeline-content p,
+body.dark .vtimeline-date {
+    color: #fff;
+}
+
+body.dark #projects h2,
+body.dark #education h2,
+body.dark #education h3,
+body.dark #education h4,
+body.dark #education p,
+body.dark #education span,
+body.dark #education li,
+body.dark #skills h2 {
+    color: #fff;
+}
+
+body.dark #skills li {
+    background-color: #2b2b2b;
+    color: #f5f5f5;
+}
+
+body.dark #experience,
+body.dark #projects {
+    background-color: #1a1a1a;
+}
+
+body.dark .headshot {
+    border: 4px solid #000;
+}
+
+body.dark a {
+    color: #f5f5f5;
+}
+
+body.dark .btn-rounded-white {
+    background: transparent;
+    color: #000;
+    border-color: #000;
+}
+
+body.dark .btn-rounded-white:hover {
+    background: #000;
+    color: #b31b1b;
+}
+
+body.dark header a {
+    color: #f5f5f5;
+}
+
+body.dark header a:hover {
+    color: #000;
+    background: #f5f5f5;
 }
 
 #darkToggle {
@@ -893,11 +970,11 @@ body.dark header ul {
     right: 20px;
     z-index: 9999;
     padding: 10px 14px;
-    font-size: 1.2em;
+    font-size: .9em;
     border-radius: 50px;
     border: none;
     background: #fff;
-    color: #3498db;
+    color: #b31b1b;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: 0.3s ease all;
@@ -909,14 +986,19 @@ body.dark header ul {
 
 body.dark #darkToggle {
     background: #2a2a2a;
-    color: #ffa500;
+    color: #f5f5f5;
+}
+
+body.dark footer p {
+    color: #f5f5f5
 }
 
 .headshot {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center 20%;
     border: 4px solid #fff;
     margin-bottom: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
