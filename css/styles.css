@@ -265,7 +265,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/cornell-campus.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden
@@ -873,37 +873,51 @@ footer {
 }
 
 body.dark {
-  background-color: #1e1e1e;
-  color: #eaeaea;
+    background-color: #1e1e1e;
+    color: #eaeaea;
 }
+
 body.dark a,
 body.dark .heading:after {
-  color: #ffa500;
-  background: #ffa500;
+    color: #ffa500;
+    background: #ffa500;
 }
+
 body.dark header ul {
-  background: #2a2a2a;
+    background: #2a2a2a;
 }
 
 #darkToggle {
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  z-index: 9999;
-  padding: 10px 14px;
-  font-size: 1.2em;
-  border-radius: 50px;
-  border: none;
-  background: #fff;
-  color: #3498db;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: 0.3s ease all;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px 14px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    border: none;
+    background: #fff;
+    color: #3498db;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s ease all;
 }
+
 #darkToggle:hover {
-  background: #f0f0f0;
+    background: #f0f0f0;
 }
+
 body.dark #darkToggle {
-  background: #2a2a2a;
-  color: #ffa500;
+    background: #2a2a2a;
+    color: #ffa500;
+}
+
+.headshot {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
