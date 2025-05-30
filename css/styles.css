@@ -362,6 +362,13 @@ footer {
     margin: 0
 }
 
+#about .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 #experience {
     padding: 50px 15px;
     text-align: center;
