@@ -13,21 +13,19 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <script>
-  // Restore theme 
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-  }
-
-  // Toggle dark mode and save 
-  document.getElementById("darkToggle").addEventListener("click", function () {
-    document.body.classList.toggle("dark");
-    const newTheme = document.body.classList.contains("dark") ? "dark" : "light";
-    localStorage.setItem("theme", newTheme);
-  });
-</script>
-
+    // Restore theme 
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark");
+    }
+  
+    // Toggle dark mode and save 
+    document.getElementById("darkToggle").addEventListener("click", function () {
+      document.body.classList.toggle("dark");
+      const newTheme = document.body.classList.contains("dark") ? "dark" : "light";
+      localStorage.setItem("theme", newTheme);
+    });
+  </script>
 
 <body>
     <button id="darkToggle" onclick="document.body.classList.toggle('dark')">Dark Mode</button>
@@ -128,7 +126,54 @@
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
-        <!-- Leave this section unchanged for now -->
+        <div class="project">
+            <div class="project-info">
+              <h3>Case Study – Modernization of Mediacorp</h3>
+              <span class="project-date">Nov 2023</span>
+              <p>
+                Solo project for Phi Gamma Nu (Delta Omicron) at Cornell. Analyzed Mediacorp's transformation into a transmedia ecosystem, using strategic analysis, industry trends, financial projections, and implementation planning.
+              </p>
+              <ul>
+                <li>Financial Forecasting</li>
+                <li>Market Research</li>
+                <li>Project Management</li>
+              </ul>
+              <a href="files/mediacorp_case.pdf" target="_blank">View Case Study (PDF)</a>
+            </div>
+          </div>
+          
+          <div class="project">
+            <div class="project-info">
+              <h3>Confidential Information Memorandum – Logitech</h3>
+              <span class="project-date">Oct 2023</span>
+              <p>
+                Group CIM project for Phi Gamma Nu (Delta Omicron). Compiled research on Logitech’s market, product portfolio, operations, and strategic positioning. Presented key financials and recommendations.
+              </p>
+              <ul>
+                <li>Industry Research</li>
+                <li>Strategic Analysis</li>
+                <li>Financial Metrics</li>
+              </ul>
+              <a href="files/logitech_cim.pdf" target="_blank">View CIM (PDF)</a>
+            </div>
+          </div>
+          
+          <div class="project">
+            <div class="project-info">
+              <h3>Stock Pitch – Williams-Sonoma</h3>
+              <span class="project-date">Oct 2023</span>
+              <p>
+                Group stock pitch for Phi Gamma Nu (Delta Omicron). Delivered DCF and comps valuation, identified strategic catalysts, and proposed mitigation strategies for key risks.
+              </p>
+              <ul>
+                <li>Valuation Modeling (DCF & Comps)</li>
+                <li>Strategic Insight</li>
+                <li>Risk Analysis</li>
+              </ul>
+              <a href="files/william_sonoma_stock.pdf" target="_blank">View Pitch (PDF)</a>
+            </div>
+          </div>
+          
     </div>
 
     <div id="skills">
@@ -182,6 +227,7 @@
         </div>
     </footer>
 
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>

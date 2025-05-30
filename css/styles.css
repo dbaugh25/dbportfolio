@@ -533,20 +533,23 @@ footer {
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
-    border-radius: 4px
+    border-radius: 4px;
+    border: 1px solid #dcd9d9; 
+    padding: 15px; 
 }
+
 
 .project-image {
     float: left
 }
 
 .project-info {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 300px;
-    padding: 15px
+    position: relative;
+    margin: 0;
+    padding: 30px 15px;
+    transform: none;
 }
+
 
 .project-info h3 {
     font-size: 1.5em;
@@ -956,9 +959,6 @@ body.dark .headshot {
     border: 4px solid #000;
 }
 
-body.dark a {
-    color: #f5f5f5;
-}
 
 body.dark .btn-rounded-white {
     background: transparent;
@@ -1008,6 +1008,22 @@ body.dark #darkToggle {
 body.dark footer p {
     color: #f5f5f5
 }
+
+body.dark .project {
+    background-color: #2b2b2b;
+    border: 1px solid #fff; 
+}
+
+body.dark .project-info a {
+    color: #b31b1b;
+}
+
+body.dark .project-info h3,
+body.dark .project-info p,
+body.dark .project-info li {
+    color: #f5f5f5;
+}
+
 
 .headshot {
     width: 200px;
